@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About | MediTeach</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head>
+<body>
+<nav class="navbar"><div class="container nav-inner"><a class="logo" href="{{ url_for('home') }}">Medi<span>Teach</span></a><div class="nav-links">
+<a href="{{ url_for('home') }}">Home</a><a href="{{ url_for('about') }}">About</a><a href="{{ url_for('doctors') }}">Doctors</a><a href="{{ url_for('services') }}">Services</a><a href="{{ url_for('appointment') }}">Appointment</a><a href="{{ url_for('contact') }}">Contact</a>
+</div></div></nav>
+<section class="page-banner"><div class="container"><h1>About MediTeach</h1><p>Healthcare built around patients.</p></div></section>
+<section class="section"><div class="container"><div class="hero-grid">
+<div><h2>We Care. We Heal. We Serve.</h2><p class="text-muted">MediTeach Hospital is a college project concept for a modern healthcare website.IT Provides comprehensive healthcare services to meet the diverse needs of our patients.</p><p class="text-muted">Our vision is to provide accessible, respectful and dependable healthcare services using a patient-first approach.</p></div>
+<div class="hero-card"><h3>Our Mission</h3><p>To combine professional medical care, modern facilities and compassionate service in one trusted healthcare environment.</p></div>
+</div></div></section>
+<section class="section section-light"><div class="container"><div class="section-head"><h2>Our Facilities</h2></div><div class="cards">
+<div class="card"><h3>Modern Diagnostics</h3><p>Laboratory and diagnostic support for accurate clinical decisions.</p></div>
+<div class="card"><h3>Pharmacy</h3><p>Convenient access to commonly prescribed medicines and healthcare products.</p></div>
+<div class="card"><h3>Emergency Unit</h3><p>Round-the-clock emergency support for urgent medical needs.</p></div>
+</div></div></section>
+<footer class="footer"><div class="container footer-grid"><div><h3>MediTeach Hospital</h3><p>Compassionate healthcare with modern facilities and experienced professionals.</p></div><div><h3>Quick Links</h3><a href="{{ url_for('about') }}">About</a><a href="{{ url_for('doctors') }}">Doctors</a><a href="{{ url_for('appointment') }}">Appointment</a><a href="{{ url_for('services') }}">Services</a><a href="{{ url_for('contact') }}">Contact</a></div><div><h3>Emergency</h3><p>24/7 Emergency: xxxxxxxxxx0</p><p>Email: info@MediTeach.example</p></div></div><div class="container footer-bottom">Disclaimer: this is a college minor project .</div></footer>
+</body>
+</html>

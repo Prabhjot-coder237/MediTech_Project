@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Services | MediTeach</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head>
+<body>
+<nav class="navbar"><div class="container nav-inner"><a class="logo" href="{{ url_for('home') }}">Medi<span>Care</span></a><div class="nav-links">
+<a href="{{ url_for('home') }}">Home</a><a href="{{ url_for('about') }}">About</a><a href="{{ url_for('doctors') }}">Doctors</a><a href="{{ url_for('services') }}">Services</a><a href="{{ url_for('appointment') }}">Appointment</a><a href="{{ url_for('contact') }}">Contact</a>
+</div></div></nav>
+<section class="page-banner"><div class="container"><h1>Medical Services</h1><p>Specialized departments for complete care.</p></div></section>
+<section class="section"><div class="container"><div class="cards">
+<div class="card"><div class="card-icon">❤️</div><h3>Cardiology</h3><p>Heart checkups, consultation and cardiac care.</p></div>
+<div class="card"><div class="card-icon">🧠</div><h3>Neurology</h3><p>Diagnosis and management of neurological conditions.</p></div>
+<div class="card"><div class="card-icon">🦴</div><h3>Orthopedics</h3><p>Care for bones, joints, muscles and sports injuries.</p></div>
+<div class="card"><div class="card-icon">🚑</div><h3>Emergency Care</h3><p>24/7 assistance for urgent medical situations.</p></div>
+<div class="card"><div class="card-icon">💊</div><h3>Medicine</h3><p>Dispensing of medications and pharmaceutical care.</p></div>
+</div></div></section>
+<footer class="footer"><div class="container footer-grid"><div><h3>MediTeach Hospital</h3><p>Compassionate healthcare with modern facilities and experienced professionals.</p></div><div><h3>Quick Links</h3><a href="{{ url_for('about') }}">About</a><a href="{{ url_for('doctors') }}">Doctors</a><a href="{{ url_for('appointment') }}">Appointment</a></div><div><h3>Emergency</h3><p>24/7 Emergency: xxxxxxxxxx0</p><p>Email: info@MediTeach.example</p></div></div><div class="container footer-bottom">Disclaimer: this is a college minor project .</div></footer>
+</body>
+</html>

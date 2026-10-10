@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Doctors | MediTeach</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head>
+<body>
+<nav class="navbar"><div class="container nav-inner"><a class="logo" href="{{ url_for('home') }}">Medi<span>Teach</span></a><div class="nav-links">
+<a href="{{ url_for('home') }}">Home</a><a href="{{ url_for('about') }}">About</a><a href="{{ url_for('doctors') }}">Doctors</a><a href="{{ url_for('services') }}">Services</a><a href="{{ url_for('appointment') }}">Appointment</a><a href="{{ url_for('contact') }}">Contact</a>
+</div></div></nav>
+<section class="page-banner"><div class="container"><h1>Our Doctors</h1><p>Meet our experienced healthcare professionals.</p></div></section>
+<section class="section"><div class="container"><div class="cards">
+<div class="card doctor-card"><div class="doctor-avatar">👨‍⚕️</div><div class="doctor-info"><h3>Dr. Mehta</h3><div class="speciality">Cardiologist</div><p>x years of experience in cardiac consultation and patient care.</p></div></div>
+<div class="card doctor-card"><div class="doctor-avatar">👩‍⚕️</div><div class="doctor-info"><h3>Dr. Kaur</h3><div class="speciality">Neurologist</div><p>x years of experience in neurological diagnosis and treatment.</p></div></div>
+<div class="card doctor-card"><div class="doctor-avatar">👨‍⚕️</div><div class="doctor-info"><h3>Dr. Sharma</h3><div class="speciality">Orthopedic Specialist</div><p>x years of experience in bone, joint and sports injury care.</p></div></div>
+<div class="card doctor-card"><div class="doctor-avatar">👨‍⚕️</div><div class="doctor-info"><h3>Dr. Verma</h3><div class="speciality">Medicine</div><p>x years of experience in general medicine and preventive care.</p></div></div>
+</div></div></section>
+<footer class="footer"><div class="container footer-grid"><div><h3>MediTeach Hospital</h3><p>Compassionate healthcare with modern facilities and experienced professionals.</p></div><div><h3>Quick Links</h3><a href="{{ url_for('about') }}">About</a><a href="{{ url_for('doctors') }}">Doctors</a><a href="{{ url_for('appointment') }}">Appointment</a></div><div><h3>Emergency</h3><p>24/7 Emergency: xxxxxxxxxx</p><p>Email: info@MediTeach.example</p></div></div><div class="container footer-bottom">Disclaimer: this is a college minor project .</div></footer>
+</body>
+</html>
