@@ -1,0 +1,12 @@
+{% extends 'base.html' %}{% block content %}
+<section class="page-banner"><div class="container">
+    <span class="eyebrow">OUR MEDICAL TEAM</span>
+    <h1>Meet our doctors</h1>
+    <p>profiles of doctors.</p></div></section>
+    <section class="section"><div class="container cards"><article class="card">
+        <div class="doctor-avatar">👨‍⚕️</div><h3>Dr.Mehta</h3><span class="speciality">Cardiologist</span><p>Cardiac consultation.</p>
+        <a href="{{ url_for('appointment') }}" class="text-link">Request appointment →</a>
+    </article><article class="card"><div class="doctor-avatar">👩‍⚕️</div><h3>Dr. Simran Kaur</h3><span class="speciality">Neurologist</span>
+        <p>Neurological diseases specialist.</p><a href="{{ url_for('appointment') }}" class="text-link">Request appointment →</a></article>
+        <article class="card"><div class="doctor-avatar">👨‍⚕️</div><h3>Dr.Sharma</h3><span class="speciality">Orthopedic Specialist</span><p>Bone, joint, and mobility care specialist.</p>
+            <a href="{{ url_for('appointment') }}" class="text-link">Request appointment →</a></article></div></section>{% endblock %}

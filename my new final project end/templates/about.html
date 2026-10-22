@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="page-banner">
+    <div class="container">
+        <span class="eyebrow">ABOUT MEDITEACH</span><h1>Care with clarity and compassion</h1>
+        <p>A minor project hospital website demonstrating skills learned in tr101.</p></div></section>
+        <section class="section"><div class="container split"><div><h2>About our project</h2>
+            <p class="muted">MediTeach is a college project that presents a sample hospital website. Visitors can explore services and doctor profiles, submit appointment requests, and contact the team.</p>
+            <p class="muted">This site is for college minor project submissions only.</p>
+            <a class="btn" href="{{ url_for('appointment') }}">Request an Appointment</a></div>
+            <div class="feature-panel"><div class="card-icon">🩺</div>
+            <h3>Our focus</h3><ul class="check-list"><li>Clear information and demonstrating </li><li>skills learned and practiced during the training TR101</li><li>Consistent layout across every page</li><li>Simple Flask and CSV workflow</li></ul></div></div></section>{% endblock %}

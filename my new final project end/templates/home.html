@@ -1,0 +1,13 @@
+{% extends 'base.html' %}{% block content %}
+<section class="hero"><div class="container hero-grid"><div><span class="eyebrow">CARE THAT COMES FIRST</span><h1>Your health,<br><span>our priority.</span></h1>
+    <p class="lead">MediTeach helps patients explore healthcare services, meet our sample medical team, and submit appointment requests.</p><div class="button-row"><a class="btn" href="{{ url_for('appointment') }}">Book an Appointment</a>
+        <a class="btn btn-outline" href="{{ url_for('services') }}">Explore Services</a>
+    </div><div class="trust-line"><span>✓ Patient-focused care</span>
+        <span>✓ Easy appointment requests</span>
+    </div></div>
+    <div class="hero-panel"><div class="hospital-emoji">🏥</div>
+    <span class="panel-tag">HERE FOR YOU</span><h2>Healthcare made simpler</h2><p>Find a department, explore doctors, and send a request in a few steps.</p>
+    <div class="panel-bottom">Emergency support information available 24/7</div></div></div></section>
+<section class="section"><div class="container"><div class="section-head"><span class="eyebrow">WHAT WE OFFER</span><h2>Healthcare services</h2><p>Explore the departments represented in this website.</p></div><div class="cards"><article class="card"><div class="card-icon">❤️</div><h3>Cardiology</h3><p>Heart health consultations and cardiac care information.</p></article><article class="card"><div class="card-icon">🧠</div><h3>Neurology</h3><p>Information about neurological assessment and care.</p></article><article class="card"><div class="card-icon">🦴</div><h3>Orthopedics</h3><p>Bone, joint, and mobility-related consultancy.</p>
+</article></div></div></section>
+{% endblock %}

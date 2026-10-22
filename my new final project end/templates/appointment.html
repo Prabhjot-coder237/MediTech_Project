@@ -1,0 +1,18 @@
+{% extends 'base.html' %}{% block content %}<section class="page-banner"><div class="container"><span class="eyebrow">APPOINTMENT REQUEST</span><h1>Book an appointment</h1><p>Complete the form below. Your request is saved in a CSV file.</p></div></section><section class="section"><div class="container"><form class="form-wrap" method="POST" action="{{ url_for('appointment') }}"><h2>Patient details</h2><p class="muted">Fields marked * are required.</p><div class="form-grid">
+<div class="field"><label for="name">Patient name *</label><input id="name" name="name" value="{{ form_data.get('name', session.get('patient_name','')) }}" required></div>
+<div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" value="{{ form_data.get('email', session.get('patient_email','')) }}" required></div>
+<div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" value="{{ form_data.get('phone','') }}" required></div>
+<div class="field"><label for="date">Preferred date *</label><input id="date" name="date" type="date" min="{{ now_date }}" value="{{ form_data.get('date','') }}" required></div>
+<div class="field"><label for="time">Preferred time *</label>
+    <input id="time" name="time" type="time" value="{{ form_data.get('time','') }}" required></div>
+<div class="field"><label for="department">Department *</label>
+    <select id="department" name="department" required><option value="">Choose department</option>{% for d in ['Cardiology','Neurology','Orthopedics','Pediatrics','Dental','General Medicine'] %}<option value="{{ d }}" {% if form_data.get('department') == d %}selected{% endif %}>{{ d }}</option>{% endfor %}</select></div>
+<div class="field full"><label for="doctor">Preferred doctor *</label>
+    <select id="doctor" name="doctor" required>
+    <option value="">Choose doctor</option>{% for d in ['Dr. Mehta','Dr. Gill','Dr.Sharma'] %}<option value="{{ d }}" {% if form_data.get('doctor') == d %}selected{% endif %}>{{ d }}</option>{% endfor %}</select></div>
+<div class="field full"><label for="message">Additional message (optional)</label>
+    <textarea id="message" name="message">{{ form_data.get('message','') }}</textarea></div>
+<div class="field full"><button class="btn" type="submit">Submit Appointment Request</button>
+</div></div></form></div>
+</section>
+{% endblock %}

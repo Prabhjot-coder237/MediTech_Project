@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+    <div class="container dashboard-wrap"><div class="dashboard-heading"><span class="eyebrow">Dashboard</span><h1>Welcome, {{ session.get('patient_name', 'Patient') }}!</h1>
+        <p class="muted">You are logged in to your MediTeach demo account.</p></div>
+        <div class="dashboard-card"><div><span class="eyebrow">ACCOUNT EMAIL</span>
+            <h2>{{ session.get('patient_email') }}</h2><p class="muted">Appointment record are recorded in csv files</p></div><div class="button-row"><a class="btn" href="{{ url_for('appointment') }}">Book an Appointment</a><a class="btn btn-outline" href="{{ url_for('home') }}">Back to Home</a>
+                <a class="btn btn-danger" href="{{ url_for('logout') }}">Logout</a>
+            </div>
+        </div></div></section>
+        {% endblock %}

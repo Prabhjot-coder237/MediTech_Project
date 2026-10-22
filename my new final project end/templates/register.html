@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="auth-section"><form class="form-wrap auth-card" method="POST" action="{{ url_for('register') }}">
+    <span class="eyebrow">CREATE AN ACCOUNT</span>
+    <h1 class="auth-title">Sign Up</h1><p class="muted">Create a patient account to access your info.</p>
+    <div class="field"><label for="name">Full name *</label>
+        <input id="name" name="name" autocomplete="name" required></div>
+    <div class="field"><label for="email">Email address *</label>
+        <input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="password">Password *</label>
+            <input id="password" name="password" type="password" minlength="8" autocomplete="new-password" required><small>Use at least 8 characters.</small></div>
+            <div class="field"><label for="confirm_password">Confirm password *</label>
+                <input id="confirm_password" name="confirm_password" type="password" minlength="8" autocomplete="new-password" required></div>
+                <button class="btn btn-block" type="submit">Create Account</button>
+                <p class="auth-switch">Already have an account? <a href="{{ url_for('login') }}">Log in</a></p></form>
+            </section>{% endblock %}

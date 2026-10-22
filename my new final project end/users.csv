@@ -1,0 +1,2 @@
+name,email,password_hash
+PRABHJOT KAUR,prb0035@gmail.com,scrypt:32768:8:1$cVptslmep3h6jTXM$7f98ea38aaa0f030097acc498da966b694625fece1efcb2745def0a2554100a56ffe553956ebd505d155f77c60df7a618c01cb36260df821406f7889db6b1837
